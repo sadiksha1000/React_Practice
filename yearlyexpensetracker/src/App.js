@@ -1,4 +1,5 @@
 // import ExpenseItem from "./components/Expenses/ExpenseItem";
+import React from 'react';
 import './components/NewExpense/NewExpense';
 import NewExpense from "./components/NewExpense/NewExpense";
 import Expenses from "./components/Expenses/Expenses";
@@ -12,7 +13,12 @@ function App() {
       amount: 94.12,
       date: new Date(2020, 7, 14),
     },
-    { id: 'e2', title: 'New TV', amount: 799.49, date: new Date(2021, 2, 12) },
+    { 
+      id: 'e2', 
+      title: 'New TV',
+      amount: 799.49, 
+      date: new Date(2021, 2, 12) 
+    },
     {
       id: 'e3',
       title: 'Car Insurance',
@@ -34,10 +40,7 @@ function App() {
   return (
     // <h3 className="text-white bg-black">Darling Don't you Cry</h3>
     <div>
-      {/* <ExpenseDate month='Jan' date='2' year='2022' /> */}
       <NewExpense onAddExpense={addExpenseHandler} />
-      {/* <ExpenseItem month='Jan' date='16' year='2021' title='Car Insurance' price='300' />
-      <ExpenseItem month='Jan' date='19' year='2021' title='Cake' price='100' /> */}
       <Expenses items={expenses} />
     </div>
   );
