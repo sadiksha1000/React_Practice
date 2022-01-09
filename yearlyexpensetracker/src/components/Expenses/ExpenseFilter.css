@@ -12,13 +12,15 @@
   }
   
   .expenses-filter label {
-    font-weight: bold;
+    font-weight: normal;
     margin-bottom: 0.5rem;
+    color:whitesmoke;
+    font-size: larger;
   }
   
   .expenses-filter select {
     font: inherit;
     padding: 0.5rem 3rem;
-    font-weight: bold;
+    font-weight: normal;
     border-radius: 6px;
   }
