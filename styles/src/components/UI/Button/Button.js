@@ -1,13 +1,15 @@
 import React from 'react';
 
-import './Button.css';
+import classes from './Button.module.css';
+// import styled from 'styled-components';
 
 const Button = props => {
   return (
-    <button type={props.type} className="button" onClick={props.onClick}>
+    <button type={props.type} className={classes.button} onClick={props.onClick}>
       {props.children}
     </button>
   );
 };
 
+// const Button=styled.button`color:blue`;
 export default Button;
